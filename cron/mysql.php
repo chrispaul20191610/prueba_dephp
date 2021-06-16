@@ -1,6 +1,7 @@
 <?php
  /* este programa es de prueba a base de crear una vista de una grfaica dcon php en una pagina web */
-
+/* esta conexion debase esta desarrolaada con la logica de programacion a objetos */ 
+/*https://www.youtube.com/watch?v=ruLvT2irR_8*/ 
  include '../config.php';
 
 class MySQL{
