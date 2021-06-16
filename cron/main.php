@@ -1,8 +1,7 @@
 <?php
 include "./mysql.php";
 $oMySQL = new MySQL ();
-$oMySQL -> conBDOB();
-
+$oMySql->execStrQueryOB($oMySql->$sqlTabla);
 
 
 ?>
