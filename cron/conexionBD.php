@@ -18,7 +18,7 @@ echo "Connecion exitosa ";
  
 //decodificacion del conetnido json y convetirlo en un array en php dentro de una variable  */ 
 $content = json_decode($jsonCont, true);
-
+/*subida de datos por medio de un foreach debido a que se trabaja con un arreglo con diferentes items*/
 foreach($content as $row) {
 
     $nombre = $row['nombre'];
@@ -34,10 +34,6 @@ foreach($content as $row) {
 
 
 /* busqueda de los datos a la matriz  */
-
-
-
-/* prueba for each */
 
 
 /* instertar los datos dentro de la base mediante sentencias sql */
