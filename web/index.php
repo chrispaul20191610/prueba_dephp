@@ -11,33 +11,52 @@
 </head>
 <body>
     <div class="container">
-        <div class="col md 4">
-            <div class="bg-success text-white text-center mb-3" style="max-width: 18rem;">
-                <div class="card-header">Total Vendidos </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-success text-white text-center m-1" >
+                    <div class="card-header">Total Vendidos </div>
+                        <div class="card-body">
+                            <h5 class="h1 card-title"><span id="idVendidos">35</span></h5>
+                            <p class="card-text">baja en las ventas vs ventas del mes anterior  </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col md 4">
+                <div class="bg-warning text-white text-center m-1" >
+                    <div class="card-header">Total en Almacen</div>
+                        <div class="card-body">
+                            <h5 class="h1 card-title"><span id="idAlmacen">35</span></h5>
+                            <p class="card-text">inventario mayor vs el  mes pasado </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col md 4">
+            <div class="bg-info text-white text-center m-1">
+                <div class="card-header">Total Ingresos </div>
                     <div class="card-body">
-                        <h5 class="card-title"><span id="idVendidos">35</span></h5>
-                        <p class="card-text">baja en las ventas </p>
+                        <h5 class="h1 card-title"><span id="idIngresos">35</span></h5>
+                        <p class="card-text">disminucion de ingresos vs mes anterior </p>
                     </div>
                 </div>
             </div>
-        <div class="col md 4">
-            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Danger card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        <div class="col md 4">
-        <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
+
         </div>
+        <div class="row my 3">
+            <div class="col md 12 text-center">
+                <h2>Reporte en ventas  </h2>
+                <canvas id="idGrafica" class="grafica"></canvas>
+            </div>
+
+        </div>
+        <div class="row my 3">
+            <div class="col md 12 text-center">
+                <div id="idContabla">
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 
