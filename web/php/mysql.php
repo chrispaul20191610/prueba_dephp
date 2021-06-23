@@ -13,6 +13,17 @@ class MySQL {
         
 
     }
+
+    /* conexion con <pdo></pdo>*/
+    /* continucacion de video https://www.youtube.com/watch?v=TxFtNz6ixug&t=147s */
+
+    public function conBDPDO(){
+        try {
+            $this->oConBD = new PDO("MySql:host=" . $this->ipBD . "dbname=" . $this->database, $this->usuarioBD, $this->passBD);
+            echo "conexion exitosa";
+
+        }
+    }
 }
 
 ?>
